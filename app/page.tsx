@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import { Navbar } from '@/components/Navbar';
 import { TrackList } from '@/components/TrackList';
 import { RadioPlayer } from '@/components/RadioPlayer';
 import { Backdrop } from '@/components/Backdrop';
+import { KiottiPortrait } from '@/components/KiottiPortrait';
 import { PlayIcon } from '@/components/Icons';
 import { tracks } from '@/lib/tracks';
 
@@ -152,17 +152,7 @@ export default function Home() {
                 <PlayIcon playing={playing} />
               </button>
             </div>
-            <div className="relative z-10 -mx-16 -mb-10 mt-5 h-[350px] sm:h-[480px] lg:absolute lg:right-[calc((100%-100vw)/2)] lg:top-[6%] lg:m-0 lg:h-auto lg:w-[75%] lg:max-w-[1200px]">
-              <Image
-                src="/images/kiotti-couch.png"
-                alt="Kiotti seated on a gray couch in a black and white varsity jacket, holding a black bag and gesturing toward the camera"
-                width={1488}
-                height={1058}
-                priority
-                sizes="(min-width: 1024px) 75vw, 110vw"
-                className="h-full w-full object-contain object-top lg:h-auto [mask-image:linear-gradient(black_0%,black_83%,transparent_100%)]"
-              />
-            </div>
+            <KiottiPortrait playing={playing} />
             <div className="relative z-30 px-5 sm:px-8 lg:absolute lg:bottom-[5%] lg:left-[4cqw] lg:w-[28%] lg:px-0">
               <TrackList active={active} playing={playing} onSelect={select} />
             </div>
