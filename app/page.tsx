@@ -16,8 +16,8 @@ function arch(text: string, from: number, to: number) {
     const peak = 0.52;
     const onLeft = t <= peak;
     const u = onLeft ? (peak - t) / peak : (t - peak) / (1 - peak);
-    const drop = u * u * (onLeft ? 0.145 : 0.09);
-    const rot = (onLeft ? -3.4 : 2.2) * u;
+    const drop = u * u * (onLeft ? 0.07 : 0.046);
+    const rot = (onLeft ? -2.9 : 1.9) * u;
     return (
       <span
         key={`${text}-${i}`}
@@ -108,22 +108,24 @@ export default function Home() {
           className="relative isolate overflow-hidden px-5 pb-10 pt-8 sm:px-8 lg:min-h-[min(950px,calc(100vw*.69))] lg:px-[4%] lg:pb-0 lg:pt-[3%]"
         >
           <Backdrop />
-          <div className="relative z-20 w-full lg:w-[58%]">
+          <div className="relative z-20 w-full [container-type:inline-size] lg:w-[70%]">
             <h1
               aria-label="HARDBODY 24/7"
-              className="stamp relative w-fit font-display text-[clamp(68px,13.6vw,210px)] uppercase leading-[.74] tracking-[-.03em] text-cream lg:text-[clamp(112px,13vw,210px)]"
+              className="stamp relative w-max max-w-full font-display text-[23.5cqi] uppercase leading-none tracking-[-.03em] text-cream"
             >
               <span className="block">{arch('HARDBODY', 0, 1)}</span>
-              <span className="block text-signal">{arch('24/7', 0, 0.56)}</span>
+              <span className="-mt-[0.3em] block text-signal">
+                {arch('24/7', 0, 0.48)}
+              </span>
             </h1>
-            <p className="mt-3 text-[10px] font-bold uppercase tracking-[.3em] sm:text-[13px] sm:tracking-[.45em]">
+            <p className="mt-2 text-[10px] font-bold uppercase tracking-[.3em] sm:text-[13px] sm:tracking-[.45em]">
               Houston <span className="text-signal">•</span> The frequency is
               yours
             </p>
             <p className="mt-2 text-[9px] font-semibold uppercase tracking-[.18em] text-white/80 sm:text-[11px]">
               Grab the radio. Spin the city. Make the signal yours.
             </p>
-            <div className="mt-6 flex flex-wrap gap-4 sm:mt-7">
+            <div className="mt-4 flex flex-wrap gap-4 sm:mt-5">
               <a
                 href="#tracklist"
                 className="flex -skew-x-6 items-center gap-8 border-2 border-signal bg-black/90 px-6 py-3 font-display text-lg italic transition hover:bg-signal sm:text-[23px]"
