@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .stamp {
+    -webkit-mask-image: url('/images/distress-mask.svg');
+    mask-image: url('/images/distress-mask.svg');
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
+    -webkit-mask-size: 3.1em 3.1em;
+    mask-size: 3.1em 3.1em;
+    -webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
+  }
+}
+@layer base {
+  html { @apply scroll-smooth bg-black; }
+  body { @apply m-0 bg-black font-sans text-white antialiased; }
+  button, a, input { @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-signal; }
+  ::selection { @apply bg-signal text-white; }
+}
