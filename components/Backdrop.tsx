@@ -4,7 +4,7 @@ export function Backdrop() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden"
+      className="pointer-events-none absolute inset-0"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_67%_45%,#38383840,transparent_50%),radial-gradient(ellipse_at_70%_100%,#bc001c35,transparent_42%)]" />
       <div className="absolute left-[-6%] top-[10%] h-[50%] w-[108%] sm:left-[4%] sm:top-[12%] sm:h-[46%] sm:w-[78%] lg:left-[6%] lg:top-[13%] lg:h-[42%] lg:w-[64%]">
@@ -70,8 +70,8 @@ export function Backdrop() {
         <br />
         <span className="pl-24">Wall</span>
       </div> */}
-      <div className="absolute right-[-35px] top-6 hidden h-[660px] w-[190px] -rotate-3 border-x border-signal/70 bg-gradient-to-b from-signal via-signal/80 to-transparent lg:block">
-        <span className="absolute left-[148px] top-[-7px] origin-top-left rotate-90 whitespace-nowrap font-display text-[155px] leading-none tracking-[-.02em] text-black">
+      <div className="absolute -right-[35px] -top-[70px] z-20 hidden h-[calc(100%+70px)] w-[190px] -rotate-3 border-x border-signal/70 bg-signal lg:block">
+        <span className="stamp absolute left-[148px] top-[78px] origin-top-left rotate-90 whitespace-nowrap font-display text-[155px] leading-none tracking-[-.02em] text-black">
           LISTEN
         </span>
       </div>

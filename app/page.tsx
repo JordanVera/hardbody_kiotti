@@ -105,7 +105,7 @@ export default function Home() {
         <section
           id="home"
           aria-label="Hardbody 24/7"
-          className="relative isolate overflow-hidden px-5 pb-10 pt-8 sm:px-8 lg:min-h-[min(950px,calc(100vw*.69))] lg:px-[4%] lg:pb-0 lg:pt-[3%]"
+          className="relative isolate px-5 pb-10 pt-8 [clip-path:inset(-70px_0_0_0)] sm:px-8 lg:min-h-[min(950px,calc(100vw*.69))] lg:px-[4%] lg:pb-0 lg:pt-[3%]"
         >
           <Backdrop />
           <div className="relative z-20 w-full [container-type:inline-size] lg:w-[70%]">
