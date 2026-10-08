@@ -101,13 +101,14 @@ export default function Home() {
         Skip to content
       </a>
       <Navbar />
-      <main id="main" className="mx-auto max-w-[1600px]">
+      <main id="main">
         <section
           id="home"
           aria-label="Hardbody 24/7"
-          className="relative isolate px-5 pb-10 pt-8 [clip-path:inset(-70px_0_0_0)] sm:px-8 lg:min-h-[min(950px,calc(100vw*.69))] lg:px-[4%] lg:pb-0 lg:pt-[3%]"
+          className="relative isolate [clip-path:inset(-70px_0_0_0)] lg:min-h-[min(950px,calc(100vw*.69))]"
         >
           <Backdrop />
+          <div className="relative mx-auto w-full max-w-[1600px] px-5 pb-10 pt-8 sm:px-8 lg:min-h-[inherit] lg:px-[4%] lg:pb-0 lg:pt-[3%]">
           <div className="relative z-20 w-full [container-type:inline-size] lg:w-[70%]">
             <h1
               aria-label="HARDBODY 24/7"
@@ -128,7 +129,8 @@ export default function Home() {
             <p className="mt-2 text-[9px] font-semibold uppercase tracking-[.18em] text-white/80 sm:text-[11px]">
               Grab the radio. Spin the city. Make the signal yours.
             </p>
-            <div className="mt-4 flex flex-wrap gap-4 sm:mt-5">
+          </div>
+            <div className="relative z-30 mt-4 flex flex-wrap gap-4 sm:mt-5 lg:absolute lg:bottom-[calc(5%+19.5rem)] lg:left-[4%] lg:mt-0">
               <a
                 href="#tracklist"
                 className="flex -skew-x-6 items-center gap-8 border-2 border-signal bg-black/90 px-6 py-3 font-display text-lg italic transition hover:bg-signal sm:text-[23px]"
@@ -186,6 +188,7 @@ export default function Home() {
             {playing ? 'Playing' : 'Paused'}: {tracks[active].title} by{' '}
             {tracks[active].artist}.
           </p>
+          </div>
         </section>
       </main>
     </>
