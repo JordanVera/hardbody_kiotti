@@ -16,6 +16,11 @@ const barlow = localFont({
   variable: '--font-barlow',
   display: 'swap',
 });
+const rocktown = localFont({
+  src: '../public/fonts/rocktown.ttf',
+  variable: '--font-rocktown',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'KIOTTI — HARDBODY 24/7',
@@ -27,7 +32,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${anton.variable} ${barlow.variable}`}>
+    <html lang="en" className={`${anton.variable} ${barlow.variable} ${rocktown.variable}`}>
       <body>{children}</body>
     </html>
   );

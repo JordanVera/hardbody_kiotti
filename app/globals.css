@@ -12,6 +12,13 @@
     -webkit-mask-repeat: repeat;
     mask-repeat: repeat;
   }
+  .font-rocktown {
+    font-family: var(--font-rocktown), cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
 }
 @layer base {
   html { @apply scroll-smooth bg-black; }

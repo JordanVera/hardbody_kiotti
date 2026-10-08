@@ -65,11 +65,11 @@ export function Backdrop() {
         />
         <rect width="1440" height="980" filter="url(#grain)" opacity=".5" />
       </svg>
-      <div className="absolute right-[4%] top-[8%] hidden rotate-[-14deg] font-serif text-[66px] italic leading-none text-white/20 lg:block">
+      {/* <div className="absolute right-[4%] top-[8%] hidden rotate-[-14deg] font-serif text-[66px] italic leading-none text-white/20 lg:block">
         Frequency
         <br />
         <span className="pl-24">Wall</span>
-      </div>
+      </div> */}
       <div className="absolute right-[-35px] top-6 hidden h-[660px] w-[190px] -rotate-3 border-x border-signal/70 bg-gradient-to-b from-signal via-signal/80 to-transparent lg:block">
         <span className="absolute left-[148px] top-[-7px] origin-top-left rotate-90 whitespace-nowrap font-display text-[155px] leading-none tracking-[-.02em] text-black">
           LISTEN

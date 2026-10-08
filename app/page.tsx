@@ -21,7 +21,7 @@ function arch(text: string, from: number, to: number) {
     return (
       <span
         key={`${text}-${i}`}
-        className="inline-block origin-bottom"
+        className="inline-block origin-bottom font-black"
         style={{
           transform: `translateY(${drop.toFixed(3)}em) rotate(${rot.toFixed(2)}deg)`,
         }}
@@ -113,8 +113,11 @@ export default function Home() {
               aria-label="HARDBODY 24/7"
               className="stamp relative w-max max-w-full font-display text-[23.5cqi] uppercase leading-none tracking-[-.03em] text-cream"
             >
-              <span className="block">{arch('HARDBODY', 0, 1)}</span>
-              <span className="-mt-[0.3em] block text-signal">
+              <span className="relative z-10 block">
+                {arch('HARDBODY', 0, 1)}
+              </span>
+              <span className="-mt-[0.10em] block text-signal">
+                {' '}
                 {arch('24/7', 0, 0.48)}
               </span>
             </h1>
