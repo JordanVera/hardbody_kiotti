@@ -70,8 +70,8 @@ export function Backdrop() {
         <br />
         <span className="pl-24">Wall</span>
       </div> */}
-      <div className="absolute -right-[35px] -top-[70px] z-20 hidden h-[calc(100%+70px)] w-[190px] -rotate-3 border-x border-signal/70 bg-signal lg:block">
-        <span className="stamp absolute left-[148px] top-[78px] origin-top-left rotate-90 whitespace-nowrap font-display text-[155px] leading-none tracking-[-.02em] text-black">
+      <div className="absolute right-0 -top-[70px] z-20 hidden h-[calc(100%+70px)] w-[210px] origin-top-right -rotate-3 border-x border-signal/70 bg-signal lg:block">
+        <span className="stamp absolute left-[190px] top-[78px] origin-top-left rotate-90 scale-x-[1.55] whitespace-nowrap font-display text-[186px] leading-none tracking-[-.02em] text-black">
           LISTEN
         </span>
       </div>

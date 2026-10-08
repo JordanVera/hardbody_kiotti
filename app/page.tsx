@@ -149,7 +149,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="relative z-10 -mx-16 -mb-10 mt-5 h-[350px] sm:h-[480px] lg:absolute lg:-right-[3%] lg:top-[6%] lg:m-0 lg:h-auto lg:w-[75%]">
+          <div className="relative z-10 -mx-16 -mb-10 mt-5 h-[350px] sm:h-[480px] lg:absolute lg:right-0 lg:top-[6%] lg:m-0 lg:h-auto lg:w-[75%]">
             <Image
               src="/images/kiotti-couch.png"
               alt="Kiotti seated on a gray couch in a black and white varsity jacket, holding a black bag and gesturing toward the camera"
